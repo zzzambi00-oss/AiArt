@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aiArt
+    username: aiArt_user
+    password: aiArt_pass
+
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
+    com.aiart.backend: DEBUG
