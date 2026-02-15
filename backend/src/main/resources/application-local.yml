@@ -3,9 +3,16 @@ spring:
     url: jdbc:postgresql://localhost:5432/aiArt
     username: aiArt_user
     password: aiArt_pass
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
 
 logging:
   level:
-    root: INFO
-    org.springframework: DEBUG
-    com.aiart.backend: DEBUG
+    org.springframework: INFO
+    com.aiart.platform: DEBUG
